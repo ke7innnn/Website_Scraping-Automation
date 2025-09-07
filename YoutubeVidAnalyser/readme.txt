@@ -1,0 +1,2 @@
+1)scrapes the mentioned videos comments and using a tensorflow module named vaderSentimnet analyses if the comments are good or bad and judges yours videos
+2)can add the numbers of comments to be scraped

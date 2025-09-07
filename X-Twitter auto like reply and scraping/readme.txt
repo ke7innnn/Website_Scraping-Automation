@@ -1,0 +1,1 @@
+set how many tweets you want to scarpe of the mentioned tags and autolike/reply
