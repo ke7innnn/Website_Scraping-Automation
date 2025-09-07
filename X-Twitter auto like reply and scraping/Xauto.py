@@ -8,13 +8,13 @@ driver = webdriver.Chrome()
 
 driver.get("https://x.com/i/flow/login")
 driver.implicitly_wait(7)
-USERNAME = ""
-PASSWORD = ""
-autolike = True          
+USERNAME = ""#username
+PASSWORD = ""#pass
+autolike = True #set true or false for yes or no        
 autoreply = True  
-tweets_to_reach = 5       
-reply = "Nice work!" 
-hashtags_toscrape = ["gym","ai","deeplearning"]
+tweets_to_reach = 5  #no of posts you want to scrape and interact     
+reply = "Nice work!" #dont use emojis
+hashtags_toscrape = ["gym","ai","deeplearning"]#add your tags
 
 username = driver.find_element("xpath", "//input[@name='text']")
 username.send_keys(USERNAME)
