@@ -5,8 +5,8 @@ import smtplib
 
 url = "https://www.amazon.in/Alienware-Area-51-Gaming-Desktop-Service/dp/B0FG379545/ref=sr_1_4?dib=eyJ2IjoiMSJ9.QGA0mq6lOiy2-xsfB62WBVbEnF0t7SPJOeKhwzao1WlWVDOR49C8DpbbzMvWvBuJkKf8oKyrXMhUyDFnUxcBw74IpR0Ghx1lm1Pw6lQ_WAxeNDJUOwZhcKzf0s7lfw5-prq7rBLkqjB08nH-63k9ZWh94vSN0hji7kuXJm77Cz_qxm2EatXRqB-9o3rgbtEtTfPE-3ZU-hgb6tmYrPn85yxROKSzl_8P1C1qWOTPgj4.zd21m73nH58f5pbgrKRmLNSeGBXfkRgmiWSeuRM1VbU&dib_tag=se&keywords=gaming&qid=1757191281&sr=8-4"
 CSV_FILE = "amazon_price_log.csv"                     
-SENDER_EMAIL = "botwebscrapinggg@gmail.com"
-SENDER_PASS = ""
+SENDER_EMAIL = "botwebscrapinggg@gmail.com"#dummymail
+SENDER_PASS = ""#not the emails password ,the app pass of your email that you get when you enable 2FA
 RECEIVER_EMAIL = "ke7inpimenta@gmail.com"                  
 
 
@@ -22,7 +22,7 @@ try:
 except:
     item = "N/A"
 
-message = f"Price dropped! 🎉 Check your product: {item}"
+message = f"Price dropped! Check your product: {item}"
 
 try:
     item_price = driver.find_element("xpath","//span[@class='a-price-whole']")
