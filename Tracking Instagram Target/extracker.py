@@ -6,13 +6,13 @@ from datetime import datetime
 
 driver = webdriver.Chrome()
 
-USERNAME = ""
-PASSWORD = ""
-EX_PROFILE = "" 
+USERNAME = ""#username
+PASSWORD = ""#pass
+EX_PROFILE = "" #url
 CSV_FILE = "ex_tracker_log.csv"
-SENDER_EMAIL = ""
-SENDER_PASS = ""
-RECEIVER_EMAIL = "ke7inpimenta@gmail.com"
+SENDER_EMAIL = ""#dummy mail
+SENDER_PASS = ""#app pass which you get after 2fa ,this is not email pass and only use gmail
+RECEIVER_EMAIL = "ke7inpimenta@gmail.com"#email where you want alerts
 
 def clean_number(text):
     text = text.replace(",", "").strip()
